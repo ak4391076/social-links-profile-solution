@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - [Solution](https://github.com/ak4391076/social-links-profile-solution.git)
-- [Live site](https://your-live-site-url.com)
+- [Live site](https://ak4391076.github.io/social-links-profile-solution/)
 
 ## My process
 
