@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Social links profile solution</title>
+
+    <style>
+      :root {
+        --font-family: "Inter", arial, helvetica, sans-serif;
+        --color-green: hsl(75deg 94% 57%);
+        --color-white: hsl(0deg 0% 100%);
+        --color-grey-700: hsl(0deg 0% 20%);
+        --color-grey-800: hsl(0deg 0% 12%);
+        --color-grey-900: hsl(0deg 0% 8%);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+      }
+
+      body {
+        font-family: var(--font-family);
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .main-container {
+        display: grid;
+        place-items: center;
+
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: 1.5rem;
+
+        background-color: var(--color-grey-900);
+      }
+
+      .card {
+        width: 100%;
+        max-width: 24rem;
+        padding: 1.5rem;
+        border-radius: 10px;
+
+        font-size: 0.875rem;
+        color: var(--color-white);
+        text-align: center;
+
+        background-color: var(--color-grey-800);
+      }
+
+      .avatar {
+        width: 5.4844rem;
+        height: 5.4844rem;
+        border-radius: 50%;
+      }
+
+      .name {
+        margin-top: 1.75rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .location {
+        font-weight: 700;
+        color: var(--color-green);
+      }
+
+      .description {
+        margin-top: 1.75rem;
+        margin-bottom: 1.625rem;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+      }
+
+      .links li a {
+        display: inline-block;
+
+        width: 100%;
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+        border-radius: 8px;
+
+        font-weight: 600;
+        color: var(--color-white);
+        text-decoration: none;
+
+        background-color: var(--color-grey-700);
+      }
+
+      .links li a:focus-visible {
+        color: var(--color-grey-800);
+        background-color: var(--color-green);
+        outline: 2px solid var(--color-white);
+        outline-offset: 3px;
+      }
+
+      @media (hover: hover) {
+        .links li a:hover {
+          color: var(--color-grey-800);
+          background-color: var(--color-green);
+        }
+      }
+
+      @media (width >= 48rem) {
+        .card {
+          padding: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="card" aria-label="Social links profile">
+        <img class="avatar" src="./assets/images/avatar-jessica.jpeg" alt="" />
+        <h1 class="name">Jessica Randall</h1>
+        <p class="location">London, United Kingdom</p>
+        <p class="description">"Front-end developer and avid reader."</p>
+        <ul class="links" role="list">
+          <li>
+            <a href="#" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Frontend Mentor</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Instagram</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
